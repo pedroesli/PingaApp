@@ -8,12 +8,10 @@ jobs:
       - checkout
       - run:
           name: Run tests
-          command: echo Hello World!
+          command: xcodebuild test -scheme PingaApp -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.5' -configuration 'Debug'
 
 workflows:
     test-workflow:
       jobs:
         - test
         
-        
-# xcodebuild test -scheme Circle-Ci-Test-App -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.5' -configuration 'Debug' 
