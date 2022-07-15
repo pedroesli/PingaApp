@@ -14,6 +14,8 @@
 		37B426BB2881F55B00235AF6 /* PingaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B426BA2881F55B00235AF6 /* PingaAppTests.swift */; };
 		37B426C52881F55B00235AF6 /* PingaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B426C42881F55B00235AF6 /* PingaAppUITests.swift */; };
 		37B426C72881F55B00235AF6 /* PingaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B426C62881F55B00235AF6 /* PingaAppUITestsLaunchTests.swift */; };
+		8D6579BD2881F871004BE733 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6579BC2881F871004BE733 /* SnapshotHelper.swift */; };
+		8D6579BF2881F96C004BE733 /* SecondContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6579BE2881F96C004BE733 /* SecondContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		37B426C02881F55B00235AF6 /* PingaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B426C42881F55B00235AF6 /* PingaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingaAppUITests.swift; sourceTree = "<group>"; };
 		37B426C62881F55B00235AF6 /* PingaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8D6579BC2881F871004BE733 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		8D6579BE2881F96C004BE733 /* SecondContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			children = (
 				37B426A92881F55700235AF6 /* PingaAppApp.swift */,
 				37B426AB2881F55700235AF6 /* ContentView.swift */,
+				8D6579BE2881F96C004BE733 /* SecondContentView.swift */,
 				37B426AD2881F55A00235AF6 /* Assets.xcassets */,
 				37B426AF2881F55A00235AF6 /* Preview Content */,
 			);
@@ -121,6 +126,7 @@
 		37B426C32881F55B00235AF6 /* PingaAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				8D6579BC2881F871004BE733 /* SnapshotHelper.swift */,
 				37B426C42881F55B00235AF6 /* PingaAppUITests.swift */,
 				37B426C62881F55B00235AF6 /* PingaAppUITestsLaunchTests.swift */,
 			);
@@ -258,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37B426AC2881F55700235AF6 /* ContentView.swift in Sources */,
+				8D6579BF2881F96C004BE733 /* SecondContentView.swift in Sources */,
 				37B426AA2881F55700235AF6 /* PingaAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +283,7 @@
 			files = (
 				37B426C72881F55B00235AF6 /* PingaAppUITestsLaunchTests.swift in Sources */,
 				37B426C52881F55B00235AF6 /* PingaAppUITests.swift in Sources */,
+				8D6579BD2881F871004BE733 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
