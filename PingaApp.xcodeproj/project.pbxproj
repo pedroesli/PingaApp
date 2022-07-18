@@ -108,6 +108,7 @@
 		37B426A82881F55600235AF6 /* PingaApp */ = {
 			isa = PBXGroup;
 			children = (
+				37B479FE2885D9E0008CDE84 /* Util */,
 				8D6579CB2885D5F0004BE733 /* View Model */,
 				8D6579C22885CCA8004BE733 /* Extension */,
 				8D6579C128820CF5004BE733 /* Model */,
@@ -145,6 +146,14 @@
 			path = PingaAppUITests;
 			sourceTree = "<group>";
 		};
+		37B479FE2885D9E0008CDE84 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8D6579C32885CCCB004BE733 /* APIFetcher.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		8D6579C028820CE7004BE733 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +174,6 @@
 		8D6579C22885CCA8004BE733 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8D6579C32885CCCB004BE733 /* APIFetcher.swift */,
 				8D6579C72885CFE4004BE733 /* UIImage+Extension.swift */,
 				8D6579C92885D2BC004BE733 /* String+Extension.swift */,
 			);

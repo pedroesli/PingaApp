@@ -8,6 +8,10 @@
 import Foundation
 
 struct DrinkData: Decodable {
+    var drinks: [Drink]
+}
+
+struct Drink: Decodable {
     var idDrink: String
     var strDrink: String
     var strCategory: String
@@ -45,4 +49,24 @@ struct DrinkData: Decodable {
     var strMeasure13: String?
     var strMeasure14: String?
     var strMeasure15: String?
+    
+    func ingredients() -> [String] {
+        var ingredients = [String]()
+        if let str = strIngredient1  { ingredients.append(str) }
+        if let str = strIngredient2  { ingredients.append(str) }
+        if let str = strIngredient3  { ingredients.append(str) }
+        if let str = strIngredient4  { ingredients.append(str) }
+        if let str = strIngredient5  { ingredients.append(str) }
+        if let str = strIngredient6  { ingredients.append(str) }
+        if let str = strIngredient7  { ingredients.append(str) }
+        if let str = strIngredient8  { ingredients.append(str) }
+        if let str = strIngredient9  { ingredients.append(str) }
+        if let str = strIngredient10 { ingredients.append(str) }
+        if let str = strIngredient11 { ingredients.append(str) }
+        if let str = strIngredient12 { ingredients.append(str) }
+        if let str = strIngredient13 { ingredients.append(str) }
+        if let str = strIngredient14 { ingredients.append(str) }
+        if let str = strIngredient15 { ingredients.append(str) }
+        return ingredients
+    }
 }

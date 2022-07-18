@@ -16,9 +16,19 @@ struct ContentView: View {
             VStack {
                 Text("Hello, world!")
                     .padding()
-                AsyncImage(url: URL(string: vm.fetchedData!.strDrinkThumb))
+                
+                AsyncImage(url: vm.getImageURL()) { image in
+                    image.resizable()
+                } placeholder: {
+                    Image("cocktailPlaceholder").resizable()
+                }
+                .aspectRatio(1/1, contentMode: .fit)
+
                 NavigationLink("Segunda tela", destination: SecondContentView())
             }
+        }
+        .onAppear {
+            vm.initView()
         }
     }
 }
