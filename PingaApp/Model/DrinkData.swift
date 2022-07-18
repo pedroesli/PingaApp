@@ -69,4 +69,43 @@ struct Drink: Decodable {
         if let str = strIngredient15 { ingredients.append(str) }
         return ingredients
     }
+    
+    func measures() -> [String] {
+        var measures = [String]()
+        if let str = strMeasure1  { measures.append(str) }
+        if let str = strMeasure2  { measures.append(str) }
+        if let str = strMeasure3  { measures.append(str) }
+        if let str = strMeasure4  { measures.append(str) }
+        if let str = strMeasure5  { measures.append(str) }
+        if let str = strMeasure6  { measures.append(str) }
+        if let str = strMeasure7  { measures.append(str) }
+        if let str = strMeasure8  { measures.append(str) }
+        if let str = strMeasure9  { measures.append(str) }
+        if let str = strMeasure10 { measures.append(str) }
+        if let str = strMeasure11 { measures.append(str) }
+        if let str = strMeasure12 { measures.append(str) }
+        if let str = strMeasure13 { measures.append(str) }
+        if let str = strMeasure14 { measures.append(str) }
+        if let str = strMeasure15 { measures.append(str) }
+        return measures
+    }
+    
+    func measuresAndIngredients() -> [String] {
+        let ingredients = ingredients()
+        let measures = measures()
+        var meaAndIng = [String]()
+        
+        for i in 0..<ingredients.count {
+            let ingredient = ingredients[i]
+            
+            if i < measures.count {
+                let measure = measures[i]
+                meaAndIng.append("\(measure) \(ingredient)")
+            }
+            
+            meaAndIng.append(ingredient)
+        }
+        
+        return meaAndIng
+    }
 }
