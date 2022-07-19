@@ -24,7 +24,7 @@ struct ContentView: View {
                 }
                 .aspectRatio(1/1, contentMode: .fit)
 
-                NavigationLink("Segunda tela", destination: SecondContentView())
+                NavigationLink("Segunda tela", destination: DrinkInfoView())
             }
         }
         .onAppear {
