@@ -31,6 +31,11 @@ class DrinkInfoViewModel: ObservableObject {
     }
     
     private func getDrink(_ idDrink: String) {
-        
+        apiFetcher.fetchDrink(idDrink: idDrink) { fetchedData in
+            DispatchQueue.main.async {
+                guard let drink = fetchedData?.drinks.first else { return }
+                self.drink = drink
+            }
+        }
     }
 }
