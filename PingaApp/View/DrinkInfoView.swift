@@ -113,6 +113,10 @@ struct DrinkInfoView: View {
     struct Content: View {
         
         @EnvironmentObject private var viewModel: DrinkInfoViewModel
+        private let columns = [
+            GridItem(.flexible()),
+            GridItem(.flexible())
+        ]
         
         var body: some View {
             VStack(spacing: 0) {
@@ -141,7 +145,7 @@ struct DrinkInfoView: View {
                             .padding(.top, 28)
                     }
                     SubTitleText("Ingredients")
-                    VStack {
+                    LazyVGrid(columns: columns) {
                         ForEach(drink.measuresAndIngredients(), id: \.ingredient) { info in
                             VStack{
                                 IngredientImage(ingredient: info.ingredient)
