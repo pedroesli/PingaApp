@@ -23,7 +23,8 @@ struct MainScreen: View {
                 }
             }
                 .navigationTitle("PingaApp")
-        }        
+        }
+        .accessibilityIdentifier("MainScreenNavigation")
     }
 }
 

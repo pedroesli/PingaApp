@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct RandomDrinkButton: View {
+    @State private var buttonHasBeenPressed: Bool = false
+    
     var body: some View {
-        Button(action: { }) {
+        NavigationLink(isActive: $buttonHasBeenPressed, destination: {
+            DrinkInfoView()
+        }, label: { EmptyView() })
+        
+        Button(action: { buttonHasBeenPressed = true }) {
             ZStack {
                 RoundedRectangle(cornerRadius: 20)
                     .foregroundColor(.yellow)

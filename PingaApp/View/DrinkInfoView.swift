@@ -19,6 +19,7 @@ struct DrinkInfoView: View {
             ScrollView(.vertical) {
                 VStack(spacing: 0) {
                     DrinkImagePreview()
+                        .accessibilityIdentifier("DrinkImagePreview")
                     ZStack {
                         RoundedRectangle(cornerRadius: 55)
                             .foregroundColor(.black)
@@ -59,6 +60,7 @@ struct DrinkInfoView: View {
                         .foregroundColor(Color("AccentColor"))
                 }
             }
+            .accessibilityIdentifier("ReturnButton")
         }
     }
     
@@ -145,7 +147,7 @@ struct DrinkInfoView: View {
                         ForEach(drink.measuresAndIngredients(), id: \.ingredient) { info in
                             VStack{
                                 IngredientImage(ingredient: info.ingredient)
-                                Text("\(info.measure)\(info.ingredient)")
+                                Text("\(info.measure) \(info.ingredient)")
                                     .font(.system(size: 16))
                                     .foregroundColor(.white)
                             }

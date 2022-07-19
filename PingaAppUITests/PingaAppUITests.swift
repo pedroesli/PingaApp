@@ -33,16 +33,13 @@ class PingaAppUITests: XCTestCase {
         // snapshot("0Launch")
         
         let app = XCUIApplication()
-        let backButton = app.navigationBars["_TtGC7SwiftUI19UIHosting"].buttons["Back"]
-        
-        app.buttons["Segunda tela"].tap()
-        
-        snapshot("0Launch")
-        
-        backButton.tap()
-        
-        snapshot("1Launch")
-                
+        app.scrollViews.otherElements.buttons["Random Drink"].tap()
+        snapshot("RandomDrink")
+        app.scrollViews.otherElements.images["DrinkImagePreview"].swipeUp()
+        app.scrollViews.otherElements.images["DrinkImagePreview"].swipeUp()
+        snapshot("RandomDrinkBottom")
+        app.navigationBars["_TtGC7SwiftUI19UIHosting"]/*@START_MENU_TOKEN@*/.buttons["ReturnButton"]/*[[".buttons[\" Return\"]",".buttons[\"ReturnButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        snapshot("MainScreen")
 
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
