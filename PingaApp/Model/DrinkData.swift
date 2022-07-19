@@ -100,10 +100,11 @@ struct Drink: Decodable {
             
             if i < measures.count {
                 let measure = measures[i]
-                meaAndIng.append("\(measure) \(ingredient)")
+                meaAndIng.append("\(measure)\(ingredient)")
             }
-            
-            meaAndIng.append(ingredient)
+            else {
+                meaAndIng.append(ingredient)
+            }
         }
         
         return meaAndIng
