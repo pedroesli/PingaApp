@@ -23,7 +23,7 @@ struct DrinkInfoView: View {
                 }
                 .aspectRatio(1/1, contentMode: .fit)
                 RoundedRectangle(cornerRadius: 55)
-                    .foregroundColor(Color(uiColor: UIColor.tertiarySystemBackground))
+                    .foregroundColor(.black)
                     .padding(.top, -60)
             }
             .edgesIgnoringSafeArea([.horizontal, .top])
@@ -51,7 +51,7 @@ struct DrinkInfoView: View {
             } label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 100)
-                        .foregroundColor(Color(uiColor: UIColor.tertiarySystemBackground))
+                        .foregroundColor(.black)
                         .padding(-8)
                     Text("\(Image(systemName: "chevron.left")) Return")
                         .foregroundColor(Color("AccentColor"))
