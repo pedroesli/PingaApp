@@ -11,6 +11,12 @@ struct DrinkData: Decodable {
     var drinks: [Drink]
 }
 
+struct DrinkLite: Decodable {
+    var idDrink: String
+    var strDrink: String
+    var strDrinkThumb: String
+}
+
 struct Drink: Decodable {
     var idDrink: String
     var strDrink: String

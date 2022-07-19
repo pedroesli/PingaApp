@@ -11,7 +11,8 @@ import SwiftUI
 struct PingaAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            MainScreen()
         }
     }
 }
