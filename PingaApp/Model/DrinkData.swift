@@ -96,23 +96,47 @@ struct Drink: Decodable {
         return measures
     }
     
-    func measuresAndIngredients() -> [String] {
+//    func measuresAndIngredients() -> [String] {
+//        let ingredients = ingredients()
+//        let measures = measures()
+//        var meaAndIng = [String]()
+//
+//        for i in 0..<ingredients.count {
+//            let ingredient = ingredients[i]
+//
+//            if i < measures.count {
+//                let measure = measures[i]
+//                meaAndIng.append("\(measure)\(ingredient)")
+//            }
+//            else {
+//                meaAndIng.append(ingredient)
+//            }
+//        }
+//
+//        return meaAndIng
+//    }
+    
+    func measuresAndIngredients() -> [(ingredient: String, measure: String)] {
         let ingredients = ingredients()
         let measures = measures()
-        var meaAndIng = [String]()
+        var meaAndIng = [(ingredient: String, measure: String)]()
         
         for i in 0..<ingredients.count {
             let ingredient = ingredients[i]
             
             if i < measures.count {
                 let measure = measures[i]
-                meaAndIng.append("\(measure)\(ingredient)")
+                meaAndIng.append((ingredient, measure))
             }
             else {
-                meaAndIng.append(ingredient)
+                meaAndIng.append((ingredient, ""))
             }
         }
         
         return meaAndIng
+    }
+    
+    func imageUrl() -> URL? {
+        return URL(string: strDrinkThumb)
     }
 }

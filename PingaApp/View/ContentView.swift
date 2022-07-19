@@ -20,11 +20,11 @@ struct ContentView: View {
                 AsyncImage(url: vm.getImageURL()) { image in
                     image.resizable()
                 } placeholder: {
-                    Image("cocktailPlaceholder").resizable()
+                    Image("CocktailPlaceholder").resizable()
                 }
                 .aspectRatio(1/1, contentMode: .fit)
 
-                NavigationLink("Segunda tela", destination: SecondContentView())
+                NavigationLink("Segunda tela", destination: DrinkInfoView())
             }
         }
         .onAppear {

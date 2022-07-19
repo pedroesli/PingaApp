@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37A903472886428100E39115 /* DrinkInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A903462886428100E39115 /* DrinkInfoView.swift */; };
+		37A903492886434200E39115 /* DrinkInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A903482886434200E39115 /* DrinkInfoViewModel.swift */; };
 		37B426AA2881F55700235AF6 /* PingaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B426A92881F55700235AF6 /* PingaAppApp.swift */; };
 		37B426AC2881F55700235AF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B426AB2881F55700235AF6 /* ContentView.swift */; };
 		37B426AE2881F55A00235AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B426AD2881F55A00235AF6 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37A903462886428100E39115 /* DrinkInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkInfoView.swift; sourceTree = "<group>"; };
+		37A903482886434200E39115 /* DrinkInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkInfoViewModel.swift; sourceTree = "<group>"; };
 		37B426A62881F55600235AF6 /* PingaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B426A92881F55700235AF6 /* PingaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingaAppApp.swift; sourceTree = "<group>"; };
 		37B426AB2881F55700235AF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 				37B426AB2881F55700235AF6 /* ContentView.swift */,
 				8D6579BE2881F96C004BE733 /* SecondContentView.swift */,
 				8DF64F3D2887320A0023D9CF /* MainScreen.swift */,
+				37A903462886428100E39115 /* DrinkInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				8D6579CC2885D5FE004BE733 /* ContentViewModel.swift */,
+				37A903482886434200E39115 /* DrinkInfoViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -347,6 +353,8 @@
 				8D6579C62885CD45004BE733 /* DrinkData.swift in Sources */,
 				8DF64F3C2887210D0023D9CF /* DrinkModule.swift in Sources */,
 				8D6579BF2881F96C004BE733 /* SecondContentView.swift in Sources */,
+				37A903492886434200E39115 /* DrinkInfoViewModel.swift in Sources */,
+				37A903472886428100E39115 /* DrinkInfoView.swift in Sources */,
 				8D6579C82885CFE4004BE733 /* UIImage+Extension.swift in Sources */,
 				8D6579C42885CCCB004BE733 /* APIFetcher.swift in Sources */,
 				37B426AA2881F55700235AF6 /* PingaAppApp.swift in Sources */,
