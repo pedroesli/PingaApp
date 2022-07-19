@@ -13,16 +13,15 @@ class ContentViewModel: ObservableObject {
     let apiHandler = APIFetcher()
     
     func initView() {
-        apiHandler.fetchRandomDrink { fetchedData in
-            DispatchQueue.main.async {
-                guard let fetchedData = fetchedData else { return }
-                self.drinkData = fetchedData
-            }
-        }
+//        apiHandler.fetchRandomDrink { fetchedData in
+//            DispatchQueue.main.async {
+//                guard let fetchedData = fetchedData else { return }
+//                self.drinkData = fetchedData
+//            }
+//        }
     }
     
     func getImageURL() -> URL? {
-        guard let strDrinkThumb = drinkData?.drinks.first?.strDrinkThumb else { return nil }
-        return URL(string: strDrinkThumb)
+        return drinkData?.drinks.first?.imageUrl()
     }
 }

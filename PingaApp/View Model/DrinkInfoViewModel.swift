@@ -12,7 +12,7 @@ class DrinkInfoViewModel: ObservableObject {
     @Published var drink: Drink?
     private let apiFetcher = APIFetcher()
     
-    func initView(idDrink: String?) {
+    func initView(_ idDrink: String?) {
         if let idDrink = idDrink {
             getDrink(idDrink)
         }

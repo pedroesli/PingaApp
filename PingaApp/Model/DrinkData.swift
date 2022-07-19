@@ -109,4 +109,8 @@ struct Drink: Decodable {
         
         return meaAndIng
     }
+    
+    func imageUrl() -> URL? {
+        return URL(string: strDrinkThumb)
+    }
 }

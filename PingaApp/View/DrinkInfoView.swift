@@ -14,13 +14,31 @@ struct DrinkInfoView: View {
     @StateObject private var viewModel = DrinkInfoViewModel()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .navigationBarBackButtonHidden(true)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    ReturnButton()
+        ZStack{
+            VStack(spacing: 0) {
+                AsyncImage(url: viewModel.drink?.imageUrl()) { image in
+                    image.resizable()
+                } placeholder: {
+                    Image("CocktailPlaceholder").resizable()
                 }
+                .aspectRatio(1/1, contentMode: .fit)
+                RoundedRectangle(cornerRadius: 55)
+                    .foregroundColor(Color(uiColor: UIColor.tertiarySystemBackground))
+                    .padding(.top, -60)
             }
+            .edgesIgnoringSafeArea([.horizontal, .top])
+
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                ReturnButton()
+            }
+        }
+        .onAppear {
+            viewModel.initView(idDrink)
+        }
     }
     
     struct ReturnButton: View {
