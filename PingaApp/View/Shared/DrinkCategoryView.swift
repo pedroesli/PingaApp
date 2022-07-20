@@ -1,10 +1,3 @@
-//
-//  DrinkCategoryView.swift
-//  PingaApp
-//
-//  Created by Paulo César on 19/07/22.
-//
-
 import SwiftUI
 
 struct DrinkCategoryView: View {
