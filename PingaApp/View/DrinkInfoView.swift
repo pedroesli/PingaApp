@@ -155,6 +155,7 @@ struct DrinkInfoView: View {
                                     .font(.system(size: 16))
                                     .foregroundColor(.white)
                             }
+                            .padding(.bottom)
                         }
                     }
                     SubTitleText("Instructions")
