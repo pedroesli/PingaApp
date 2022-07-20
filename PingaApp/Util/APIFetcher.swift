@@ -89,9 +89,9 @@ class APIFetcher {
                     return
                 }
                 
-                if let response = response as? HTTPURLResponse {
-                    print("Response HTTP Status code: \(response.statusCode)")
-                }
+//                if let response = response as? HTTPURLResponse {
+//                    print("Response HTTP Status code: \(response.statusCode)")
+//                }
                 
                 let decoder = JSONDecoder()
                 
@@ -100,7 +100,7 @@ class APIFetcher {
                     completion(fetchedData)
                 } catch {
                     completion(nil)
-                    print(error)
+                    print("Decoder Error: \(error)")
                 }
             }
             task.resume()

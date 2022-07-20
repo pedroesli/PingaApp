@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MainScreen: View {
+    
+    @StateObject private var viewModel = MainScreenViewModel()
+    
     let drink: DrinkLite = DrinkLite(idDrink: "14133", strDrink: "Cosmopolitan Martini", strDrinkThumb: "https://www.thecocktaildb.com/images/media/drink/upxxpq1439907580.jpg")
 
     @StateObject private var viewModel = MainScreenViewModel()
@@ -30,6 +33,9 @@ struct MainScreen: View {
             }
                 .navigationTitle("PingaApp")
         }
+        .onAppear(perform: {
+            viewModel.initView()
+        })
         .accessibilityIdentifier("MainScreenNavigation")
         .onAppear {
             viewModel.initView()
