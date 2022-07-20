@@ -33,36 +33,16 @@ class PingaAppUITests: XCTestCase {
         // snapshot("0Launch")
         
         let app = XCUIApplication()
-        snapshot("0MainScreen")
+        //snapshot("0MainScreen")
         app.scrollViews.otherElements.buttons["Random Drink"].tap()
-        snapshot("1RandomDrink")
+        //snapshot("1RandomDrink")
         app.navigationBars["_TtGC7SwiftUI19UIHosting"]/*@START_MENU_TOKEN@*/.buttons["ReturnButton"]/*[[".buttons[\" Return\"]",".buttons[\"ReturnButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.scrollViews.otherElements.scrollViews["Cocktails"].otherElements.buttons["14029"].tap()
-        snapshot("2Cocktail")
+        //snapshot("2Cocktail")
         //app.scrollViews.otherElements.staticTexts["Ingredients"].swipeUp()
         app.swipeUp()
-        snapshot("3Cocktail_Bottom")
+        //snapshot("3Cocktail_Bottom")
         
-//        let app = XCUIApplication()
-//        let scrollViewsQuery = app/*@START_MENU_TOKEN@*/.scrollViews/*[[".otherElements[\"MainScreenNavigation\"].scrollViews",".scrollViews"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-//        let element = scrollViewsQuery.otherElements.containing(.staticText, identifier:"Gin Fizz").children(matching: .other).element
-//        element.swipeUp()
-//        element.swipeUp()
-//        element.swipeUp()
-//        app/*@START_MENU_TOKEN@*/.navigationBars["_TtGC7SwiftUI19UIHosting"].buttons["ReturnButton"]/*[[".otherElements[\"MainScreenNavigation\"].navigationBars[\"_TtGC7SwiftUI19UIHosting\"]",".buttons[\" Return\"]",".buttons[\"ReturnButton\"]",".navigationBars[\"_TtGC7SwiftUI19UIHosting\"]"],[[[-1,3,1],[-1,0,1]],[[-1,2],[-1,1]]],[0,0]]@END_MENU_TOKEN@*/.tap()
-//
-//        let elementsQuery = scrollViewsQuery.otherElements
-//        elementsQuery.staticTexts["Alcoholic"].swipeUp()
-//
-//        let returnbuttonButton = app/*@START_MENU_TOKEN@*/.navigationBars["PingaApp"].buttons["ReturnButton"]/*[[".otherElements[\"MainScreenNavigation\"].navigationBars[\"PingaApp\"]",".buttons[\" Return\"]",".buttons[\"ReturnButton\"]",".navigationBars[\"PingaApp\"]"],[[[-1,3,1],[-1,0,1]],[[-1,2],[-1,1]]],[0,0]]@END_MENU_TOKEN@*/
-//        returnbuttonButton.tap()
-//        returnbuttonButton.tap()
-//
-//        let elementsQuery2 = elementsQuery.scrollViews["Cocktails"].otherElements
-//        elementsQuery2/*@START_MENU_TOKEN@*/.buttons["14029"]/*[[".buttons[\"57 Chevy with a White License Plate\"]",".buttons[\"14029\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeLeft()
-//        elementsQuery2/*@START_MENU_TOKEN@*/.buttons["178318"]/*[[".buttons[\"747 Drink\"]",".buttons[\"178318\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeLeft()
-        
-
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
