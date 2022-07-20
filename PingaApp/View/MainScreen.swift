@@ -12,8 +12,6 @@ struct MainScreen: View {
     @StateObject private var viewModel = MainScreenViewModel()
     
     let drink: DrinkLite = DrinkLite(idDrink: "14133", strDrink: "Cosmopolitan Martini", strDrinkThumb: "https://www.thecocktaildb.com/images/media/drink/upxxpq1439907580.jpg")
-
-    @StateObject private var viewModel = MainScreenViewModel()
     
     var body: some View {
         NavigationView {
