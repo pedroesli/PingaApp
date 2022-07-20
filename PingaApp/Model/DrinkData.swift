@@ -11,6 +11,10 @@ struct DrinkData: Decodable {
     var drinks: [Drink]
 }
 
+struct DrinkFilterData: Decodable {
+    var drinks: [DrinkLite]
+}
+
 struct DrinkLite: Decodable {
     var idDrink: String
     var strDrink: String
@@ -95,26 +99,6 @@ struct Drink: Decodable {
         if let str = strMeasure15 { measures.append(str) }
         return measures
     }
-    
-//    func measuresAndIngredients() -> [String] {
-//        let ingredients = ingredients()
-//        let measures = measures()
-//        var meaAndIng = [String]()
-//
-//        for i in 0..<ingredients.count {
-//            let ingredient = ingredients[i]
-//
-//            if i < measures.count {
-//                let measure = measures[i]
-//                meaAndIng.append("\(measure)\(ingredient)")
-//            }
-//            else {
-//                meaAndIng.append(ingredient)
-//            }
-//        }
-//
-//        return meaAndIng
-//    }
     
     func measuresAndIngredients() -> [(ingredient: String, measure: String)] {
         let ingredients = ingredients()
