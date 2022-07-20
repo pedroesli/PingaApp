@@ -15,14 +15,13 @@ struct DrinkInfoView: View {
     
     var body: some View {
         ZStack{
-            Color.black.ignoresSafeArea()
             ScrollView(.vertical) {
                 VStack(spacing: 0) {
                     DrinkImagePreview()
                         .accessibilityIdentifier("DrinkImagePreview")
                     ZStack {
                         RoundedRectangle(cornerRadius: 55)
-                            .foregroundColor(.black)
+                            .foregroundColor(Color(uiColor: .systemBackground))
                             .offset(x: 0, y: -60)
                         Content()
                     }
@@ -57,7 +56,7 @@ struct DrinkInfoView: View {
                         .foregroundColor(.black.opacity(0.75))
                         .padding(-8)
                     Text("\(Image(systemName: "chevron.left")) Return")
-                        .foregroundColor(Color("AccentColor"))
+                        .foregroundColor(.accentColor)
                 }
             }
             .accessibilityIdentifier("ReturnButton")
@@ -89,7 +88,6 @@ struct DrinkInfoView: View {
             HStack {
                 Text(text)
                     .font(.system(size: 24).bold())
-                    .foregroundColor(.white)
                 Spacer()
             }
             .padding(.top, 22)
@@ -107,7 +105,6 @@ struct DrinkInfoView: View {
         var body: some View {
             Text(text)
                 .font(.system(size: 16))
-                .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
@@ -130,7 +127,6 @@ struct DrinkInfoView: View {
                     Group {
                         Text(drink.strDrink)
                             .font(.system(size: 32).bold())
-                            .foregroundColor(.white)
                             .padding(.top, 40)
                         Text("- \(drink.strCategory) -")
                             .font(.system(size: 20))
@@ -153,7 +149,6 @@ struct DrinkInfoView: View {
                                 IngredientImage(ingredient: info.ingredient)
                                 Text("\(info.measure) \(info.ingredient)")
                                     .font(.system(size: 16))
-                                    .foregroundColor(.white)
                             }
                             .padding(.bottom)
                         }
@@ -165,7 +160,7 @@ struct DrinkInfoView: View {
                 }
                 else {
                     ProgressView()
-                        .tint(Color("AccentColor"))
+                        .tint(.accentColor)
                         .frame(height: UIScreen.main.bounds.height / 2)
                 }
             }
