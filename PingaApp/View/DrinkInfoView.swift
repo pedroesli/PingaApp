@@ -18,7 +18,6 @@ struct DrinkInfoView: View {
             ScrollView(.vertical) {
                 VStack(spacing: 0) {
                     DrinkImagePreview()
-                        .accessibilityIdentifier("DrinkImagePreview")
                     ZStack {
                         RoundedRectangle(cornerRadius: 55)
                             .foregroundColor(Color(uiColor: .systemBackground))
@@ -73,6 +72,7 @@ struct DrinkInfoView: View {
             } placeholder: {
                 Image("CocktailPlaceholder").resizable()
             }
+            .accessibilityIdentifier("DrinkImagePreview")
             .aspectRatio(1/1, contentMode: .fit)
         }
     }

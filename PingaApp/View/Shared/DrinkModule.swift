@@ -9,9 +9,14 @@ import SwiftUI
 
 struct DrinkModule: View {
     var drink: DrinkLite
+    @State private var buttonHasBeenPressed: Bool = false
     
     var body: some View {
-        Button(action: {  }) {
+        NavigationLink(isActive: $buttonHasBeenPressed, destination: {
+            DrinkInfoView(idDrink: drink.idDrink)
+        }, label: { EmptyView() })
+        
+        Button(action: { buttonHasBeenPressed = true }) {
             VStack {
                 AsyncImage(url: URL(string: drink.strDrinkThumb), content: { image in
                     image.resizable()
@@ -24,7 +29,7 @@ struct DrinkModule: View {
                             ZStack {
                                 Rectangle()
                                     .foregroundColor(.yellow)
-                                    .frame(width: 150, height: 20)
+                                    .frame(width: 150, height: 30)
                                 Text(drink.strDrink)
                                     .font(.system(size: 12.0, weight: .bold, design: .rounded))
                             }
@@ -39,6 +44,7 @@ struct DrinkModule: View {
             }
             .padding(5)
         }
+        .accessibilityIdentifier(drink.idDrink)
         .foregroundColor(.black)
     }
 }

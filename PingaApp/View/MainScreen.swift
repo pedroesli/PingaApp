@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainScreen: View {
     let drink: DrinkLite = DrinkLite(idDrink: "14133", strDrink: "Cosmopolitan Martini", strDrinkThumb: "https://www.thecocktaildb.com/images/media/drink/upxxpq1439907580.jpg")
+
+    @StateObject private var viewModel = MainScreenViewModel()
     
     var body: some View {
         NavigationView {
@@ -16,15 +18,22 @@ struct MainScreen: View {
                 VStack {
                     RandomDrinkButton()
                     
-                    DrinkCategoryView(title: "Common Drinks")
-                    DrinkCategoryView(title: "Cocktails")
-                    DrinkCategoryView(title: "Alcoholic Drinks")
-                    DrinkCategoryView(title: "Non-Alcoholic Drinks")
+                    DrinkCategoryView(title: "Common Drinks", drinks: $viewModel.ordinaryDrinks)
+                        .accessibilityIdentifier("Common_Drinks")
+                    DrinkCategoryView(title: "Cocktails", drinks: $viewModel.cocktails)
+                        .accessibilityIdentifier("Cocktails")
+                    DrinkCategoryView(title: "Alcoholic Drinks", drinks: $viewModel.alcoholicDrinks)
+                        .accessibilityIdentifier("Alcoholic_Drinks")
+                    DrinkCategoryView(title: "Non-Alcoholic Drinks", drinks: $viewModel.nonAlcoholicDrinks)
+                        .accessibilityIdentifier("Non_Alcoholic_Drinks")
                 }
             }
                 .navigationTitle("PingaApp")
         }
         .accessibilityIdentifier("MainScreenNavigation")
+        .onAppear {
+            viewModel.initView()
+        }
     }
 }
 
