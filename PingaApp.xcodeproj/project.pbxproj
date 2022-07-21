@@ -17,6 +17,7 @@
 		37B426BB2881F55B00235AF6 /* PingaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B426BA2881F55B00235AF6 /* PingaAppTests.swift */; };
 		37B426C52881F55B00235AF6 /* PingaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B426C42881F55B00235AF6 /* PingaAppUITests.swift */; };
 		37B426C72881F55B00235AF6 /* PingaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B426C62881F55B00235AF6 /* PingaAppUITestsLaunchTests.swift */; };
+		80E6AA5A28889FDE004B09A9 /* APIFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6AA5928889FDE004B09A9 /* APIFetcherTests.swift */; };
 		8D6579BD2881F871004BE733 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6579BC2881F871004BE733 /* SnapshotHelper.swift */; };
 		8D6579BF2881F96C004BE733 /* SecondContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6579BE2881F96C004BE733 /* SecondContentView.swift */; };
 		8D6579C42885CCCB004BE733 /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6579C32885CCCB004BE733 /* APIFetcher.swift */; };
@@ -61,6 +62,7 @@
 		37B426C02881F55B00235AF6 /* PingaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B426C42881F55B00235AF6 /* PingaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingaAppUITests.swift; sourceTree = "<group>"; };
 		37B426C62881F55B00235AF6 /* PingaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		80E6AA5928889FDE004B09A9 /* APIFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetcherTests.swift; sourceTree = "<group>"; };
 		8D6579BC2881F871004BE733 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		8D6579BE2881F96C004BE733 /* SecondContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContentView.swift; sourceTree = "<group>"; };
 		8D6579C32885CCCB004BE733 /* APIFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetcher.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				37B426BA2881F55B00235AF6 /* PingaAppTests.swift */,
+				80E6AA5928889FDE004B09A9 /* APIFetcherTests.swift */,
 			);
 			path = PingaAppTests;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E6AA5A28889FDE004B09A9 /* APIFetcherTests.swift in Sources */,
 				37B426BB2881F55B00235AF6 /* PingaAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
