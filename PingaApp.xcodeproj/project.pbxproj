@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37A903472886428100E39115 /* DrinkInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A903462886428100E39115 /* DrinkInfoView.swift */; };
+		37A903492886434200E39115 /* DrinkInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A903482886434200E39115 /* DrinkInfoViewModel.swift */; };
+		37A9034D28886D3200E39115 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A9034C28886D3200E39115 /* MainScreenViewModel.swift */; };
 		37B426AA2881F55700235AF6 /* PingaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B426A92881F55700235AF6 /* PingaAppApp.swift */; };
 		37B426AC2881F55700235AF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B426AB2881F55700235AF6 /* ContentView.swift */; };
 		37B426AE2881F55A00235AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B426AD2881F55A00235AF6 /* Assets.xcassets */; };
@@ -14,8 +17,18 @@
 		37B426BB2881F55B00235AF6 /* PingaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B426BA2881F55B00235AF6 /* PingaAppTests.swift */; };
 		37B426C52881F55B00235AF6 /* PingaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B426C42881F55B00235AF6 /* PingaAppUITests.swift */; };
 		37B426C72881F55B00235AF6 /* PingaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B426C62881F55B00235AF6 /* PingaAppUITestsLaunchTests.swift */; };
+		80E6AA5A28889FDE004B09A9 /* APIFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6AA5928889FDE004B09A9 /* APIFetcherTests.swift */; };
 		8D6579BD2881F871004BE733 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6579BC2881F871004BE733 /* SnapshotHelper.swift */; };
 		8D6579BF2881F96C004BE733 /* SecondContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6579BE2881F96C004BE733 /* SecondContentView.swift */; };
+		8D6579C42885CCCB004BE733 /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6579C32885CCCB004BE733 /* APIFetcher.swift */; };
+		8D6579C62885CD45004BE733 /* DrinkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6579C52885CD45004BE733 /* DrinkData.swift */; };
+		8D6579C82885CFE4004BE733 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6579C72885CFE4004BE733 /* UIImage+Extension.swift */; };
+		8D6579CA2885D2BC004BE733 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6579C92885D2BC004BE733 /* String+Extension.swift */; };
+		8D6579CD2885D5FE004BE733 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6579CC2885D5FE004BE733 /* ContentViewModel.swift */; };
+		8DF64F3C2887210D0023D9CF /* DrinkModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF64F3B2887210D0023D9CF /* DrinkModule.swift */; };
+		8DF64F3E2887320A0023D9CF /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF64F3D2887320A0023D9CF /* MainScreen.swift */; };
+		8DF64F402887459B0023D9CF /* DrinkCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF64F3F2887459B0023D9CF /* DrinkCategoryView.swift */; };
+		8DF64F4228874B1A0023D9CF /* RandomDrinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF64F4128874B1A0023D9CF /* RandomDrinkButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37A903462886428100E39115 /* DrinkInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkInfoView.swift; sourceTree = "<group>"; };
+		37A903482886434200E39115 /* DrinkInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkInfoViewModel.swift; sourceTree = "<group>"; };
+		37A9034C28886D3200E39115 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 		37B426A62881F55600235AF6 /* PingaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B426A92881F55700235AF6 /* PingaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingaAppApp.swift; sourceTree = "<group>"; };
 		37B426AB2881F55700235AF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,8 +62,18 @@
 		37B426C02881F55B00235AF6 /* PingaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B426C42881F55B00235AF6 /* PingaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingaAppUITests.swift; sourceTree = "<group>"; };
 		37B426C62881F55B00235AF6 /* PingaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		80E6AA5928889FDE004B09A9 /* APIFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetcherTests.swift; sourceTree = "<group>"; };
 		8D6579BC2881F871004BE733 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		8D6579BE2881F96C004BE733 /* SecondContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContentView.swift; sourceTree = "<group>"; };
+		8D6579C32885CCCB004BE733 /* APIFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetcher.swift; sourceTree = "<group>"; };
+		8D6579C52885CD45004BE733 /* DrinkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkData.swift; sourceTree = "<group>"; };
+		8D6579C72885CFE4004BE733 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		8D6579C92885D2BC004BE733 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		8D6579CC2885D5FE004BE733 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		8DF64F3B2887210D0023D9CF /* DrinkModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModule.swift; sourceTree = "<group>"; };
+		8DF64F3D2887320A0023D9CF /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		8DF64F3F2887459B0023D9CF /* DrinkCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCategoryView.swift; sourceTree = "<group>"; };
+		8DF64F4128874B1A0023D9CF /* RandomDrinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDrinkButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +124,12 @@
 		37B426A82881F55600235AF6 /* PingaApp */ = {
 			isa = PBXGroup;
 			children = (
+				37B479FE2885D9E0008CDE84 /* Util */,
+				8D6579CB2885D5F0004BE733 /* View Model */,
+				8D6579C22885CCA8004BE733 /* Extension */,
+				8D6579C128820CF5004BE733 /* Model */,
+				8D6579C028820CE7004BE733 /* View */,
 				37B426A92881F55700235AF6 /* PingaAppApp.swift */,
-				37B426AB2881F55700235AF6 /* ContentView.swift */,
-				8D6579BE2881F96C004BE733 /* SecondContentView.swift */,
 				37B426AD2881F55A00235AF6 /* Assets.xcassets */,
 				37B426AF2881F55A00235AF6 /* Preview Content */,
 			);
@@ -119,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				37B426BA2881F55B00235AF6 /* PingaAppTests.swift */,
+				80E6AA5928889FDE004B09A9 /* APIFetcherTests.swift */,
 			);
 			path = PingaAppTests;
 			sourceTree = "<group>";
@@ -131,6 +161,63 @@
 				37B426C62881F55B00235AF6 /* PingaAppUITestsLaunchTests.swift */,
 			);
 			path = PingaAppUITests;
+			sourceTree = "<group>";
+		};
+		37B479FE2885D9E0008CDE84 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8D6579C32885CCCB004BE733 /* APIFetcher.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		8D6579C028820CE7004BE733 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DF64F3A288720CF0023D9CF /* Shared */,
+				37B426AB2881F55700235AF6 /* ContentView.swift */,
+				8D6579BE2881F96C004BE733 /* SecondContentView.swift */,
+				8DF64F3D2887320A0023D9CF /* MainScreen.swift */,
+				37A903462886428100E39115 /* DrinkInfoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D6579C128820CF5004BE733 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D6579C52885CD45004BE733 /* DrinkData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D6579C22885CCA8004BE733 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8D6579C72885CFE4004BE733 /* UIImage+Extension.swift */,
+				8D6579C92885D2BC004BE733 /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8D6579CB2885D5F0004BE733 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D6579CC2885D5FE004BE733 /* ContentViewModel.swift */,
+				37A903482886434200E39115 /* DrinkInfoViewModel.swift */,
+				37A9034C28886D3200E39115 /* MainScreenViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		8DF64F3A288720CF0023D9CF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8DF64F3B2887210D0023D9CF /* DrinkModule.swift */,
+				8DF64F3F2887459B0023D9CF /* DrinkCategoryView.swift */,
+				8DF64F4128874B1A0023D9CF /* RandomDrinkButton.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +350,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6579CD2885D5FE004BE733 /* ContentViewModel.swift in Sources */,
 				37B426AC2881F55700235AF6 /* ContentView.swift in Sources */,
+				8DF64F3E2887320A0023D9CF /* MainScreen.swift in Sources */,
+				8DF64F4228874B1A0023D9CF /* RandomDrinkButton.swift in Sources */,
+				8DF64F402887459B0023D9CF /* DrinkCategoryView.swift in Sources */,
+				8D6579CA2885D2BC004BE733 /* String+Extension.swift in Sources */,
+				8D6579C62885CD45004BE733 /* DrinkData.swift in Sources */,
+				8DF64F3C2887210D0023D9CF /* DrinkModule.swift in Sources */,
 				8D6579BF2881F96C004BE733 /* SecondContentView.swift in Sources */,
+				37A903492886434200E39115 /* DrinkInfoViewModel.swift in Sources */,
+				37A903472886428100E39115 /* DrinkInfoView.swift in Sources */,
+				37A9034D28886D3200E39115 /* MainScreenViewModel.swift in Sources */,
+				8D6579C82885CFE4004BE733 /* UIImage+Extension.swift in Sources */,
+				8D6579C42885CCCB004BE733 /* APIFetcher.swift in Sources */,
 				37B426AA2881F55700235AF6 /* PingaAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E6AA5A28889FDE004B09A9 /* APIFetcherTests.swift in Sources */,
 				37B426BB2881F55B00235AF6 /* PingaAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +531,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,6 +561,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
